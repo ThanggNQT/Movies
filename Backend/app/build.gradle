@@ -5,14 +5,23 @@
  */
 
 plugins {
-    id 'buildlogic.java-application-conventions'
+    id 'org.springframework.boot' version '3.2.5'
+    id 'io.spring.dependency-management' version '1.1.4'
+    id 'java'
+    id 'application'
+}
+
+group = 'NQT.company.com'                    // tên tổ chức của dự án
+version = '0.0.1-SNAPSHOT'                   // phiên bản đang phát triển => Khi mà phát triển xong thì sẽ là 1.0.0 => sửa lỗi 1.0.1
+
+repositories {
+    mavenCentral()
 }
 
 dependencies {
-    implementation 'org.apache.commons:commons-text'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
 }
 
 application {
-    // Define the main class for the application.
-    mainClass = 'org.example.app.App'
+    mainClass = 'main.Main'
 }
