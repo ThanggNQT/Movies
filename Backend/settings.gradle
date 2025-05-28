@@ -17,4 +17,4 @@ plugins {
 }
 
 rootProject.name = 'Movies'
-include('app', 'list', 'utilities')
+include('app')
