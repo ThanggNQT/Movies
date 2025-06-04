@@ -5,8 +5,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class Controller {
-    @GetMapping("/hello")
+    @GetMapping("/home")
     public String sayHello() {
-        return "Server running on port 8088!";
+        return "HOME PAGE";
+    } 
+
+    @GetMapping("/admin/dashboard")
+    public String admin() {
+        return "ADMIN PAGE";
     } 
 }
